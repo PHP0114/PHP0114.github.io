@@ -21,14 +21,19 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&Josefin+Sans&display=swap" rel="stylesheet">
 
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
 <body>
   <!-- 導覽列 -->
-  <nav id="menu" class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-    <div class="container">
+  <nav id="menu" class="navbar navbar-expand-md navbar-light fixed-top px-3">
+    <div class="container p-0">
       <a class="navbar-brand" id="title" href="#">CYC's Resume</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
         <span class="navbar-toggler-icon"></span>
@@ -36,26 +41,20 @@
       <div class="collapse navbar-collapse" id="nav">
         <ul class="navbar-nav ms-auto ">
           <li class="nav-item">
-            <a class="nav-link" href="#aboutMe"><i class="far fa-address-card me-2"></i>關於我</a>
+            <a class="nav-link" href="#aboutMe"><i class="fas fa-address-card mx-2"></i>關於我</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#exp"><i class="fas fa-briefcase me-2"></i>學/經歷</a>
+            <a class="nav-link" href="#job"><i class="fas fa-briefcase mx-2"></i>求職條件</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#portfolio"><i class="fas fa-book-open me-2"></i>作品集</a>
+            <a class="nav-link" href="#exp"><i class="fas fa-graduation-cap mx-2"></i>學/經歷</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact"><i class="fas fa-envelope-open me-2"></i>聯絡資訊</a>
+            <a class="nav-link" href="#portfolio"><i class="fas fa-book-open mx-2"></i>作品集</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#job">求職條件</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">聯絡資訊</a>
-          </li> -->
         </ul>
-        <a href="#" class="btn text-dark">
-          <i class="fas fa-sign-in-alt"></i>
+        <a href="./login.html" class="btn text-dark">
+          <i class="fas fa-sign-in-alt ms-3"></i>
         </a>
       </div>
     </div>
@@ -64,9 +63,9 @@
   <!-- 封面 -->
   <div id="cover">
     <div class="en">
-      <p class="ps-3 m-0">網頁工程師</p>
+      <p id="" class="typer-target ps-3 m-0">網頁工程師</p>
       <a href="#aboutMe" class="btn text-dark">
-        <i class="fas fa-search"></i>
+        <i id="search" class="fas fa-search"></i>
         <!-- <img src="./media/search1.png" alt=""> -->
       </a>
     </div>
@@ -75,7 +74,7 @@
   <!-- 關於我 -->
 
   <section id="aboutMe" class="container py-5">
-    <header class="text-center m-auto py-4 h1 fw-bold">
+    <header class="text-center m-auto pb-4 h1 fw-bold">
       aboutMe
     </header>
 
@@ -88,7 +87,7 @@
         </div>
         <img src="./media/cyc.jpeg" class="cyc">
         <div class="icon">
-          <a href=""><i class="fab fa-github h2"></i></a>
+          <a href="https://php0114.github.io/"><i class="fab fa-github h2"></i></a>
           <a href=""><i class="fab fa-codepen h2"></i></a>
         </div>
       </div>
@@ -98,8 +97,55 @@
           <img src="./media/square.ico" class="px-1">
           <img src="./media/times.ico" class="px-1">
         </div>
-        <p class="p-3">Lorem ipsum dolor sit amet.</p>
+        <div class="px-3 py-4">
+          <i class="fas fa-user px-2"></i>陳昱均<br>
+          <i class="fas fa-map-marker-alt pt-3 px-2"></i>現居新北市<br>
+          <i class="fas fa-birthday-cake pt-3 px-2"></i>1995 / 10<br>
+          <i class="fas fa-envelope-open pt-3 px-2"></i>abc12345@gmail.com<br>
+          <i class="fas fa-phone-alt pt-3 px-2"></i>0912345678
+        </div>
       </div>
+    </article>
+  </section>
+
+  <!-- 求職條件 -->
+  <section id="job" class="container-fluid py-5">
+    <header class="text-center m-auto h1 fw-bold">
+      I want the job.
+    </header>
+
+    <article class="row p-4 pt-2 m-5 bg-light">
+      <div id="jb" class="container">
+        <div class="winBtn">
+          <img src="./media/minus.ico" class="px-1">
+          <img src="./media/square.ico" class="px-1">
+          <img src="./media/times.ico" class="px-1">
+        </div>
+        <table class="m-4">
+          <tbody>
+            <tr>
+              <th class="col-5 py-2">希望職稱</th>
+              <td class="col-7 py-2">全端/前端/後端網頁設計人員</td>
+            </tr>
+            <tr>
+              <th class="col-5 py-2">希望工作性質</th>
+              <td class="col-7 py-2">全職</td>
+            </tr>
+            <tr>
+              <th class="col-5 py-2">希望地點</th>
+              <td class="col-7 py-2">台北市、新北市</td>
+            </tr>
+            <tr>
+              <th class="col-5 py-2">希望待遇</th>
+              <td class="col-7 py-2">面議</td>
+            </tr>
+            <tr>
+              <th class="col-5 py-2">可上班日</th>
+              <td class="col-7 py-2">隨時</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
     </article>
   </section>
 
@@ -110,43 +156,43 @@
       Experience
     </header>
 
-    <article class=" row p-4 m-5 bg-light">
-      <div id="ex" class="p-0">
-        <div class="winBtn1">
+    <article class=" row p-4 pt-0 m-5 bg-light">
+      <div id="ex" class="">
+        <div class="winBtn">
           <img src="./media/minus.ico" class="px-1">
           <img src="./media/square.ico" class="px-1">
           <img src="./media/times.ico" class="px-1">
         </div>
       </div>
       <div id="folder" class="folder row">
-        
-        <div class="folder col-12 col-md-2">
+
+        <div class="folder col-12 col-lg-2 col-md-6">
           <img src="./media/folder.png" class="folder">
           <p class="folder">清傳高商<br>商業經營科</p>
         </div>
         <i class="fas fa-arrow-right mb-5 d-none col d-xl-block"></i>
 
-        <div class="folder col-12 col-md-2">
+        <div class="folder col-12 col-lg-2 col-md-6">
           <img src="./media/folder.png" class="folder">
-          <p class="folder">德明財經科技大學<br>企業管理系</p>
+          <p class="folder">德明財經科大<br>企業管理系</p>
         </div>
         <i class="fas fa-arrow-right mb-5 d-none col d-xl-block"></i>
 
-        <div class="folder col-12 col-md-2">
+        <div class="folder col-12 col-lg-2 col-md-4">
           <img src="./media/folder.png" class="folder">
           <p class="folder">台新銀行<br>實習金融專員</p>
         </div>
         <i class="fas fa-arrow-right mb-5 d-none col d-xl-block"></i>
 
-        <div class="folder col-12 col-md-2">
+        <div class="folder col-12 col-lg-2 col-md-4">
           <img src="./media/folder.png" class="folder">
-          <p class="folder">穎寶企業(股)<br>實習金融專員</p>
+          <p class="folder">穎寶企業(股)<br>業務助理</p>
         </div>
         <i class="fas fa-arrow-right mb-5 d-none col d-xl-block"></i>
 
-        <div class="folder col-12 col-md-2">
+        <div class="folder col-12 col-lg-2 col-md-4">
           <img src="./media/folder.png" class="folder">
-          <p class="folder">台新銀行<br>實習金融專員</p>
+          <p class="folder">泰山職訓<br>網頁設計專班</p>
         </div>
       </div>
     </article>
@@ -154,7 +200,7 @@
 
   <!-- 作品集 -->
   <section id="portfolio" class="container pt-5">
-    <header class="text-center">
+    <header class="text-center pb-4">
       <h2 class="mb-4">portfolio</h2>
     </header>
     <nav class="nav nav-tabs justify-content-around flex-nowrap">
@@ -166,19 +212,19 @@
       <div class="row tab-pane fade show active" id="roomA">
         <div class="col-md-6 col-lg-4 mb-3">
           <div class="card">
-            <img src="https://fakeimg.pl/300x200/bdd5ea" class="card-img-top">
+            <img src="https://fakeimg.pl/300x200/bdd5ea" class="card-img-top" data-aos="flip-left">
             <div class="card-body h6">類比時鐘</div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 mb-3">
           <div class="card">
-            <img src="https://fakeimg.pl/300x200/bdd5ea" class="card-img-top">
+            <img src="https://fakeimg.pl/300x200/bdd5ea" class="card-img-top" data-aos="flip-left">
             <div class="card-body h6">數位時鐘</div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 mb-3">
           <div class="card">
-            <img src="https://fakeimg.pl/300x200/bdd5ea" class="card-img-top">
+            <img src="https://fakeimg.pl/300x200/bdd5ea" class="card-img-top" data-aos="flip-left">
             <div class="card-body h6">闖關小遊戲</div>
           </div>
         </div>
@@ -186,19 +232,19 @@
       <div class="row tab-pane fade" id="roomB">
         <div class="col-md-6 col-lg-4 mb-3">
           <div class="card">
-            <img src="https://fakeimg.pl/300x200/ace" class="card-img-top">
-            <div class="card-body h6">類比時鐘</div>
+            <img src="https://fakeimg.pl/300x200/ace" class="card-img-top" data-aos="flip-left">
+            <div class="card-body h6">萬年曆</div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 mb-3">
           <div class="card">
-            <img src="https://fakeimg.pl/300x200/bdd5ea" class="card-img-top">
+            <img src="https://fakeimg.pl/300x200/bdd5ea" class="card-img-top" data-aos="flip-left">
             <div class="card-body h6">數位時鐘</div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 mb-3">
           <div class="card">
-            <img src="https://fakeimg.pl/300x200/bdd5ea" class="card-img-top">
+            <img src="https://fakeimg.pl/300x200/bdd5ea" class="card-img-top" data-aos="flip-left">
             <div class="card-body h6">闖關小遊戲</div>
           </div>
         </div>
@@ -206,19 +252,19 @@
       <div class="row tab-pane fade" id="roomC">
         <div class="col-md-6 col-lg-4 mb-3">
           <div class="card">
-            <img src="https://fakeimg.pl/300x200/bdd5ea" class="card-img-top">
+            <img src="https://fakeimg.pl/300x200/bdd5ea" class="card-img-top" data-aos="flip-left">
             <div class="card-body h6">酒標DM</div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 mb-3">
           <div class="card">
-            <img src="https://fakeimg.pl/300x200/bdd5ea" class="card-img-top">
+            <img src="https://fakeimg.pl/300x200/bdd5ea" class="card-img-top" data-aos="flip-left">
             <div class="card-body h6">感謝小卡</div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 mb-3">
           <div class="card">
-            <img src="https://fakeimg.pl/300x200/bdd5ea" class="card-img-top">
+            <img src="https://fakeimg.pl/300x200/bdd5ea" class="card-img-top" data-aos="flip-left">
             <div class="card-body h6">Logo</div>
           </div>
         </div>
@@ -279,7 +325,7 @@
       const
         viewWidth = $(window).innerHeight(),
         nowatb = $(window).scrollTop(),
-        // height = $("#cover").innerHeight(),
+        height = $("#cover").innerHeight(),
         offset = $("menu").innerHeight() + 1;
 
       if (nowat <= height - offset) {  //0~-910 in sliderZone == 沒有bg
@@ -301,10 +347,10 @@
     });
     //當網頁更改寬度時
     $(window).resize(bgmenu);
-
   </script>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
   <script>
     AOS.init({
       duration: 1500,

@@ -1,6 +1,7 @@
 body {
   font-family: "Josefin Sans", "Noto Sans TC", arial, sans-serif;
   background: #f7f7ff;
+  min-width: 400px;
 }
 header {
   text-decoration: underline 5px;
@@ -11,7 +12,6 @@ article {
   align-items: center;
 }
 
-
 /* 導覽列 */
 
 .nav-link {
@@ -20,9 +20,9 @@ article {
 #title {
   font-weight: bold;
 }
-/* #menu {
+#menu {
   background: #f7f7ff;
-} */
+}
 
 /* 封面 */
 
@@ -55,7 +55,9 @@ article {
 }
 
 /* aboutMe */
-
+#search:hover {
+  transform: scale(1.5);
+}
 #am {
   width: 450px;
   height: 260px;
@@ -72,7 +74,7 @@ article {
   border: #577399 solid 3px;
   border-top: #577399 solid 36px;
   background: #f7f7ff;
-  margin-bottom:60px;
+  margin-bottom: 60px;
 }
 .cyc {
   height: 160px;
@@ -85,27 +87,43 @@ article {
   margin-top: -66px;
   width: 24px;
 }
-.icon{
+.icon {
   display: flex;
   justify-content: center;
 }
-.icon>a>i{
+.icon > a > i {
   width: 40px;
   height: 100px;
   margin: 20px;
   color: #000;
 }
-/* 學/經歷 */
 
+/* 求職條件 */
+#exp > article {
+  display: flex;
+  justify-content: space-around;
+}
+
+#jb{
+  width: 560px;
+  border: #577399 solid 3px;
+  border-top: #577399 solid 36px;
+  background: #f7f7ff;
+}
+
+/* 學/經歷 */
 #exp {
   background: #bdd5ea;
 }
 #exp > article {
   display: flex;
   justify-content: space-around;
-  border: #577399 solid 5px;
-  border-top: #577399 solid 40px;
+  border: #577399 solid 3px;
+  border-top: #577399 solid 36px;
   background: #f7f7ff;
+}
+#ex {
+  width: 24;
 }
 #folder {
   display: flex;
@@ -113,20 +131,13 @@ article {
   text-align: center;
   align-items: center;
 }
-#floder>i{
+#floder > i {
   height: 200px;
   width: 200px;
 }
 .folder > img {
-  width: 100px;
-  height: 100px;
-}
-.winBtn1 {
-  float: right;
-}
-.winBtn1 > img {
-  margin-top: -120px;
-  width: 24px;
+  width: 120px;
+  height: 120px;
 }
 
 /* 作品集 */
@@ -150,7 +161,7 @@ article {
   border-bottom: 1px solid #577399;
 }
 
-#portfolio .tab-content>.row.active {
+#portfolio .tab-content > .row.active {
   display: flex;
 }
 
