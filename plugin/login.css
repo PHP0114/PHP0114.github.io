@@ -4,7 +4,6 @@ body{
   display: flex;
   justify-content: center;
   font-family: "Josefin Sans", "Noto Sans TC", arial, sans-serif;
-  font-weight: bold;
 }
 
 .login{

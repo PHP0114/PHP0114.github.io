@@ -108,7 +108,6 @@ article {
   width: 560px;
   border: #577399 solid 3px;
   border-top: #577399 solid 36px;
-  background: #f7f7ff;
 }
 
 /* 學/經歷 */
@@ -122,18 +121,11 @@ article {
   border-top: #577399 solid 36px;
   background: #f7f7ff;
 }
-#ex {
-  width: 24;
-}
 #folder {
   display: flex;
   justify-content: space-around;
   text-align: center;
   align-items: center;
-}
-#floder > i {
-  height: 200px;
-  width: 200px;
 }
 .folder > img {
   width: 120px;
@@ -163,6 +155,10 @@ article {
 
 #portfolio .tab-content > .row.active {
   display: flex;
+}
+
+.card-img-top{
+  height: 240px;
 }
 
 /* 回首頁 */
