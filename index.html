@@ -325,9 +325,9 @@
     const bgmenu = function () {
       const
         viewWidth = $(window).innerHeight(),
-        nowatb = $(window).scrollTop(),
+        nowat = $(window).scrollTop(),
         height = $("#cover").innerHeight(),
-        offset = $("menu").innerHeight() + 1;
+        offset = $("#menu").innerHeight() + 1;
 
       if (nowat <= height - offset) {  //0~-910 in sliderZone == 沒有bg
         $("#top").fadeOut();  //隱藏置頂按鈕
